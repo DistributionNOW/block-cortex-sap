@@ -517,7 +517,7 @@
     sorts: [data_intelligence_ar.Past_Due_Interval, data_intelligence_ar.OverDue_Amount
         desc 4]
     limit: 500
-    row_total: right
+    #row_total: right
     dynamic_fields: [{category: measure, expression: '', label: Overdue Amount, value_format: '0.00,"K"',
         value_format_name: !!null '', based_on: data_intelligence_ar.Open_and_Over_Due_Local_Currency,
         _kind_hint: measure, measure: overdue_amount, type: sum, _type_hint: sum}]
