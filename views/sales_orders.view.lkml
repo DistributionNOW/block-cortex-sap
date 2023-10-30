@@ -2331,6 +2331,8 @@ view: sales_orders {
       label: "JPY"
       value: "JPY"
     }
+    default_value: "USD"
+
     hidden: no
   }
 
