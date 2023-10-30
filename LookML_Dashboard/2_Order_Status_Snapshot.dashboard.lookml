@@ -47,7 +47,8 @@
       Distribution Channel: distribution_channels_md.distribution_channel_name_vtext
       Product: materials_md.material_text_maktx
     row: 4
-    col: 6
+    ##col: 4
+    col: 0
     width: 6
     height: 4
   - title: Cancelled Orders
@@ -112,7 +113,8 @@
       Distribution Channel: distribution_channels_md.distribution_channel_name_vtext
       Product: materials_md.material_text_maktx
     row: 4
-    col: 12
+  ##  col: 12
+    col: 9
     width: 6
     height: 4
   - title: Order Vs Delivery Efficiency (Top 10 Products)
@@ -176,39 +178,39 @@
     col: 0
     width: 24
     height: 8
-  - title: One Touch Order
-    name: One Touch Order
-    model: cortex_sap_operational
-    explore: sales_orders
-    type: single_value
-    fields: [sales_orders.one_touch_order_percentage, sales_orders.count_one_touch_order,
-      sales_orders.count_total_orders]
-    limit: 500
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    value_format: 0.00"%"
-    series_types: {}
-    defaults_version: 1
-    hidden_fields: [sales_orders.count_one_touch_order, sales_orders.count_total_orders]
-    listen:
-      Year: sales_orders.creation_date_erdat_date
-      Division: divisions_md.division_name_vtext
-      Currency: currency_conversion_new.tcurr
-      Region: countries_md.country_name_landx
-      Sales Org: sales_organizations_md.sales_org_name_vtext
-      Distribution Channel: distribution_channels_md.distribution_channel_name_vtext
-      Product: materials_md.material_text_maktx
-    row: 4
-    col: 0
-    width: 6
-    height: 4
+##  - title: One Touch Order
+##    name: One Touch Order
+##    model: cortex_sap_operational
+##    explore: sales_orders
+##    type: single_value
+##    fields: [sales_orders.one_touch_order_percentage, sales_orders.count_one_touch_order,
+##      sales_orders.count_total_orders]
+##    limit: 500
+##    custom_color_enabled: true
+##    show_single_value_title: true
+##    show_comparison: false
+##    comparison_type: value
+##    comparison_reverse_colors: false
+##    show_comparison_label: true
+##    enable_conditional_formatting: false
+##    conditional_formatting_include_totals: false
+##    conditional_formatting_include_nulls: false
+##    value_format: 0.00"%"
+##    series_types: {}
+##   defaults_version: 1
+##    hidden_fields: [sales_orders.count_one_touch_order, sales_orders.count_total_orders]
+##    listen:
+##      Year: sales_orders.creation_date_erdat_date
+##      Division: divisions_md.division_name_vtext
+##      Currency: currency_conversion_new.tcurr
+##      Region: countries_md.country_name_landx
+##      Sales Org: sales_organizations_md.sales_org_name_vtext
+##      Distribution Channel: distribution_channels_md.distribution_channel_name_vtext
+##      Product: materials_md.material_text_maktx
+##    row: 4
+##    col: 0
+##    width: 6
+##    height: 4
   - title: New Tile
     name: New Tile
     model: cortex_sap_operational
